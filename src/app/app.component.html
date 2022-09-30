@@ -1,0 +1,20 @@
+<body id="body-pd">
+   
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div>  <a href="#"  class="nav_logo"> <i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">GS</span> </a>
+                <div class="nav_list"> <a href="#" routerLink="/product/index" class="nav_link "> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Product</span> </a> 
+					<a href="#" routerLink="/client/index" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Client</span> </a> 
+					<a href="#" routerLink="/commande/index" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i> <span class="nav_name">Commande</span> </a> 
+					<a href="#" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Bookmark</span> </a>
+					<a href="#" class="nav_link"> <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Files</span> </a>
+					 <a href="#" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Stats</span> </a> 
+					</div>
+            </div>  <a href="#" routerLink="/product/index" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a>
+        </nav>
+    </div>
+    <!--Container Main start-->
+    <div class="height-100 bg-light">
+		<router-outlet></router-outlet>
+    </div>
+    <!--Container Main end-->

@@ -1,0 +1,59 @@
+<div class="container">
+    <h1 class="mt-5">Create New Post</h1>
+   
+    <a href="#" routerLink="/product/index" class="btn btn-primary">Back</a>
+         
+    <form [formGroup]="form" (ngSubmit)="submit()">
+   
+        <div class="form-group">
+            <label for="nom">Nom:</label>
+            <input
+                formControlName="nom"
+                id="nom"
+                type="text"
+                class="form-control">
+            <div *ngIf="f['nom'].touched && f['nom'].invalid" class="alert alert-danger">
+                <div *ngIf="f['nom'].errors && f['nom'].errors['required']">Nom is required.</div>
+            </div>
+        </div>
+   
+        <div class="form-group">
+            <label for="prenom">Prenom</label>
+           <input
+                formControlName="prenom"
+                id="prenom"
+                type="text"
+                class="form-control">
+            
+            <div *ngIf="f['prenom'].touched && f['prenom'].invalid" class="alert alert-danger">
+                <div *ngIf="f['prenom'].errors && f['prenom'].errors['required']">Prenom is required.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="ville">Ville</label>
+           <input
+                formControlName="ville"
+                id="ville"
+                type="text"
+                class="form-control">
+            
+            <div *ngIf="f['ville'].touched && f['ville'].invalid" class="alert alert-danger">
+                <div *ngIf="f['ville'].errors && f['ville'].errors['required']">Ville is required.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="adresse">Adresse</label>
+           <input
+                formControlName="adresse"
+                id="adresse"
+                type="text"
+                class="form-control">
+            
+            <div *ngIf="f['adresse'].touched && f['adresse'].invalid" class="alert alert-danger">
+                <div *ngIf="f['adresse'].errors && f['adresse'].errors['required']">Adresse is required.</div>
+            </div>
+        </div>
+   
+        <button class="btn btn-primary mt-5" type="submit" [disabled]="!form.valid">Submit</button>
+    </form>
+</div>

@@ -1,0 +1,33 @@
+<div class="container">
+    <h1 class="mt-5">Gestion de stock </h1>
+   
+    <a href="#" routerLink="/product/create" class="btn btn-primary mb-3">Create New Product</a>
+     
+    <table class="table table-bordered">
+		<thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>Nom</th>
+        <th>Prenom</th>
+        <th>Ville</th>
+        <th>Adresse</th>
+        <th width="220px">Action</th>
+      </tr>
+	</thead>
+	<tbody  class="table-light m-1 "> 
+
+      <tr *ngFor="let product of products">
+        <td>{{ product.id }}</td>
+        <td>{{ product.nom }}</td>
+        <td>{{ product.prenom }}</td>
+        <td>{{ product.ville }}</td>
+        <td>{{ product.adresse }}</td>
+        <td>
+          <!-- <a href="#" [routerLink]="['/product/', product.id, 'view']" class="btn btn-info">View</a> -->
+          <a  [routerLink]="['/product/', product.id, 'edit']" class="btn btn-success mx-1">Edit</a>
+          <button type="button" (click)="deleteProduct(product.id)" class="btn btn-danger mx-1">Delete</button>
+        </td>
+      </tr>
+	</tbody>
+    </table>
+ </div>

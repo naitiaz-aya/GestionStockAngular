@@ -1,0 +1,41 @@
+{
+  "products": [
+    {
+      "nom": "Naitiaz",
+      "prenom": "Aya",
+      "ville": "Marrakesh",
+      "adresse": "Gueliz",
+      "id": 2
+    },
+    {
+      "nom": "Naitiaz",
+      "prenom": "Aya",
+      "ville": "Marrakesh",
+      "adresse": "Gueliz\nIzdihar",
+      "id": 3
+    }
+  ],
+  "clients": [
+    {
+      "nom": "Naitiaz",
+      "prenom": "Aya",
+      "ville": "Marrakesh",
+      "adresse": "Gueliz",
+      "id": 1
+    },
+    {
+      "nom": "Naitiaz",
+      "prenom": "Aya",
+      "ville": "Marrakesh",
+      "adresse": "Gueliz\nIzdihar",
+      "id": 2
+    }
+  ],
+  "commandes": [
+    {
+      "dateCmd": "2019-12-04",
+      "clientId": 3,
+      "id": 1
+    }
+  ]
+}

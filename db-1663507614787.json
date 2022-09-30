@@ -1,0 +1,11 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "nom": "AngularJS (1.0.0)",
+      "prenom": "AngularJS (1.0.0)",
+      "ville": "AngularJS (1.0.0)",
+      "adresse": "June 14th, 2012"
+    }
+  ]
+}
